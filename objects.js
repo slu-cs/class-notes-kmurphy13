@@ -88,11 +88,11 @@ const course1 = new Course("CS", 332);
 const course2 = new Course("CS", 364);
 const course3 = new Course("CS", 498);
 const course4 = new Course("Math", 498);
-const classes = [course1, course2, course3, course4];
-console.log(classes)
+const courses = [course1, course2, course3, course4];
+console.log(courses)
 
 let max = 0;
-for(let i =0; i < class.length; i++){
+for(let i =0; i < courses.length; i++){
   if (courses[i].number > max){
     max = courses[i].number;
   }
