@@ -111,3 +111,20 @@ const book3 = new Book("Test", ["Kira","Tim"])
 console.log(book1.is_author("Steven King"));
 console.log(book2.is_author("Steven King"));
 console.log(book3.is_author("Jonas"));
+
+
+// Define a function that works like the range function in Python.
+// For example, range(5) returns [0,1,2,3,4] and range(3,8) returns [3,4,5,6,7].
+const range = function(a,b){
+  array = [];
+  if(b === undefined){
+    for(let i=0; i<a; i++){
+      array[i]=i;
+    }
+  } else{
+    for(let i=a i<b; i++){
+      array[i] = i;
+    }
+  }
+  return array;
+};
