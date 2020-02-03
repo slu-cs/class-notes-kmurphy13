@@ -122,7 +122,7 @@ const range = function(a,b){
       array.push(i);
     }
   } else{
-    for(let i=a i<b; i++){
+    for(let i=a; i<b; i++){
       array.push(i);
     }
   }
