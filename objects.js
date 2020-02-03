@@ -15,3 +15,10 @@ const circle = {
 
 console.log(circle.center)
 console.log(circle.radius)
+
+// Array
+const languages = ['HTML', 'CSS', 'JS']
+console.log(languages)
+for(let i=0; i < languages.length; i++){
+  console.log(languages[i]);
+}
