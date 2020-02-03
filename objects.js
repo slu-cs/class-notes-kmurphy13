@@ -92,7 +92,7 @@ const classes = [course1, course2, course3, course4];
 console.log(classes)
 
 let max = 0;
-for(let i =0 i < class.length i++){
+for(let i =0; i < class.length; i++){
   if (courses[i].number > max){
     max = courses[i].number;
   }
