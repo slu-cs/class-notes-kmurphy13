@@ -9,7 +9,7 @@ console.log(point.x);
 point.x = 3;
 
 const circle = {
-  center: point;
+  center: point,
   radius: 4
 };
 
