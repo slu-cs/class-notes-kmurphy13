@@ -119,11 +119,11 @@ const range = function(a,b){
   array = [];
   if(b === undefined){
     for(let i=0; i<a; i++){
-      array[i]=i;
+      array.push(i);
     }
   } else{
     for(let i=a i<b; i++){
-      array[i] = i;
+      array.push(i);
     }
   }
   return array;
