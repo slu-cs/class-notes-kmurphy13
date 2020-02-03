@@ -128,3 +128,6 @@ const range = function(a,b){
   }
   return array;
 };
+
+console.log(range(5));
+console.log(range(3,8));
