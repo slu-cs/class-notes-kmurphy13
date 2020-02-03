@@ -73,5 +73,20 @@ Rectangle.prototype.area = function(){
 const small = new Rectangle(1,2);
 const large = new Rectangle(10,20);
 
-console.log(small.area())
-console.log(large.area())
+console.log(small.area());
+console.log(large.area());
+
+// Create an array of objects representing the courses you are taking this semester.
+// Each course should have a subject (e.g. 'CS') and a number (e.g. 332).
+// Iterate through this array to find the largest course number in your schedule.
+const Course = function(subject, number){
+  this.subject = subject;
+  this.number = number;
+}
+
+const course1 = new Course("CS", 332);
+const course2 = new Course("CS", 364);
+const course3 = new Course("CS", 498);
+const course4 = new Course("Math", 498);
+const classes = [course1, course2, course3, course4];
+console.log(classes)
