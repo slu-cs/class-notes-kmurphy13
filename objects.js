@@ -91,6 +91,14 @@ const course4 = new Course("Math", 498);
 const classes = [course1, course2, course3, course4];
 console.log(classes)
 
+let max = 0;
+for(let i =0 i < class.length i++){
+  if (courses[i].number > max){
+    max = courses[i].number;
+  }
+}
+console.log(max)
+
 
 // Define a constructor function for Book objects. Each book should have a title and an array of authors.
 // Define a shared method for books that lets you check whether a given author was one of the authors in this book.
