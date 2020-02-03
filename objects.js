@@ -90,3 +90,24 @@ const course3 = new Course("CS", 498);
 const course4 = new Course("Math", 498);
 const classes = [course1, course2, course3, course4];
 console.log(classes)
+
+
+// Define a constructor function for Book objects. Each book should have a title and an array of authors.
+// Define a shared method for books that lets you check whether a given author was one of the authors in this book.
+
+const Book = function(title, authors){
+  this.title = title;
+  this.authors = authors;
+}
+
+Book.prototype.is_author = function(author){
+  return this.authors.includes(author);
+}
+
+const book1 = new Book("It", ["Steven King"]);
+const book2 = new Book("The Great Gatsby", ["F. Scott Fitzgerald"]);
+const book3 = new Book("Test", ["Kira","Tim"])
+
+console.log(book1.is_author("Steven King"));
+console.log(book2.is_author("Steven King"));
+console.log(book3.is_author("Jonas"));
