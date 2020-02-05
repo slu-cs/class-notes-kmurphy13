@@ -18,3 +18,5 @@ const numbers = [1,2,3,4,5];
 
 console.log(map(numbers, square));
 console.log(numbers);
+
+console.log(map(numbers,x=>x**2))
