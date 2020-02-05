@@ -17,7 +17,7 @@ user.question('Filename: ', function(filename) {
   });
 
   // Asynchronous line-by-line input
-  file.on('line', function(line)){
+  file.on('line', function(line){
     console.log(line);
   });
 
