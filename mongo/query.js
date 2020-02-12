@@ -50,7 +50,7 @@ queries[2].exec(function(error, professors) {
     if(error) console.error(error.stack);
     
     const names = professors.map(p => p.name);
-    console.log('Started in 2003', names);
+    console.log('Started in 2003: ', names);
 });
 
 queries[3].exec(function(error, professors) {
