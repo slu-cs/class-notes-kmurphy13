@@ -29,7 +29,7 @@ const queries = [
     Professor.find().where('courses').in(362),
 
     // What are all the ranks
-    Professor.distinct('rank')
+    Professor.distinct('rank') 
 ]
 
 queries[0].exec(function(error, professors) {
@@ -63,7 +63,7 @@ queries[3].exec(function(error, professors) {
 queries[4].exec(function(error, professors) {
     if(error) console.error(error.stack);
     
-    console.log('Possible ranks: ', names);
+    console.log('Possible ranks: ', professors);
 });
 
 
