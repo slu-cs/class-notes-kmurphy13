@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Forms</title>
-    </head>
-    <body>
-        <form action="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="" class="m-3 border p-3">
+        <div class="form-group">
             <label for="text">Text:</label>
-            <input type="text" name="text" id="text">
+            <input type="text" name="text" id="text" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="textarea">Text Area:</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-            <fieldset>
-                <legend>Checkboxes:</legend>
-                <input type="checkbox" id="check1" name="check1" value="C">
-                <label for="C">C</label>
-                <br>
-                <input type="checkbox" id="check2" name="check2" value="D">
-                <label for="D">D</label>
-                <br>
-                <input type="checkbox" id="check3" name="check3" value="E">
-                <label for="E">E</label>
-            </fieldset>
-            <fieldset>
-                <legend>Radio Buttons:</legend>
-                <input type="radio" name="radio" id="radio1" value="A">
-                <label for="A">A</label>
-                <br>
-                <input type="radio" name="radio" id="radio2" value="B">
-                <label for="B">B</label>
-            </fieldset>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+
+        <fieldset>
+            <legend class="form-control-plaintext">Checkboxes:</legend>
+            <div class="form-check">
+                <input type="checkbox" id="check1" name="check1" value="C" class="form-check-input">
+                <label for="C" class="form-check-label">C</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="check2" name="check2" value="D" class="form-check-input">
+                <label for="D" class="form-check-label">D</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="check3" name="check3" value="E" class="form-check-input">
+                <label for="E" class="form-check-label">E</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="form-control-plaintext">Radio Buttons:</legend>
+            <div class="form-check">
+                <input type="radio" name="radio" id="radio1" value="A" class="form-check-input">
+                <label for="A" class="form-check-label">A</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="radio" id="radio2" value="B" class="form-check-input">
+                <label for="B" class="form-check-label">B</label>
+            </div>
+        </fieldset>
+        <div>
             <label for="select">Select:</label>
-            <select name="select" id="select">
+            <select name="select" id="select" class="form-control">
                 <option value="default" selected="selected">Select one option </option>
                 <option value="option1">F</option>
                 <option value="option1">G</option>
                 <option value="option1">H</option>
             </select>
-            <br>
-            <button type="submit">Submit</button>
-            <br>
-            <button>Cancel</button>
-        </form>
-    </body>
-    
+        </div>
+        
+        <button type="submit" class="btn btn-primary m-3">Submit</button>
+        <br>
+        <button class="btn btn-secondary ml-3">Cancel</button>
+    </form>
+</body>
+
 </html>
